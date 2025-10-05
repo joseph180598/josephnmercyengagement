@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Engagement Countdown</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -14,15 +16,22 @@
       text-align: center;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #fff;
-      background: url('https://images.unsplash.com/photo-1529636542971-5d0f90f3aeb8?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      background: url('images/engagement_bg.jpg') no-repeat center center/cover;
     }
     .overlay {
       background: rgba(0,0,0,0.6);
       padding: 40px;
       border-radius: 15px;
+      max-width: 700px;
+    }
+    .names {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      margin-bottom: 15px;
+      color: #ffd700;
     }
     h1 {
-      font-size: 2.5em;
+      font-size: 2em;
       margin-bottom: 20px;
     }
     #countdown {
@@ -30,7 +39,7 @@
       margin-bottom: 20px;
     }
     .venue a {
-      color: #ffd700;
+      color: #ffcc70;
       text-decoration: none;
       font-weight: bold;
     }
@@ -38,15 +47,20 @@
 </head>
 <body>
   <div class="overlay">
+    <div class="names">Joseph ❤️ Mercy</div>
     <h1>💍 Engagement Countdown</h1>
     <div id="countdown"></div>
+
     <div class="venue">
-      Venue: <a href="https://maps.app.goo.gl/1B5KJpLepvZFYCeHA?g_st=ipc" target="_blank">Aai Tisai Marriage Hall</a>
+      Venue: <br>
+      <strong>Aai Tisai Marriage Hall</strong><br>
+      ⏰ 19 Oct 2025, 5:30 PM<br>
+      📍 <a href="https://maps.app.goo.gl/1B5KJpLepvZFYCeHA?g_st=ipc" target="_blank">View on Google Maps</a>
     </div>
   </div>
 
   <script>
-    const eventDate = new Date("2025-10-19T18:00:00+05:30");
+    const eventDate = new Date("2025-10-19T19:00:00+05:30"); 
 
     function updateCountdown() {
       const now = new Date();
